@@ -8,17 +8,44 @@
     width: 100vw;
     height: 100vh;
     background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10% auto;
+}
+
+#images {
+    height: fit-content;
+    width: 50%;
+    position: relative;
+}
+
+#actions {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    margin-bottom: 10%;
 }
 
 button {
     width: 3rem;
     height: 3rem;
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 50%;
-    /* display: flex; */
+    padding-top: 3%;
+    border: none;
 }
 
 button > svg {
     height: 2rem;
     width: 2rem;
+}
+
+button:first-child > svg {
+    color: rgb(57, 57, 57);
+}
+
+button:last-child > svg {
+    color: rgb(213, 81, 103);
 }
